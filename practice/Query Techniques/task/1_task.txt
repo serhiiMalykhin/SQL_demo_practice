@@ -1,0 +1,38 @@
+Task: Employee Hierarchy
+You’re working with a company’s database that stores an employee hierarchy.
+The employees table contains the following data:
+
+employee_id	employee_name	manager_id
+1	Alice	NULL
+2	Bob	    1
+3	Carol	1
+4	Dave	2
+5	Eve	    2
+6	Frank	3
+
+Requirements
+Write a recursive query to retrieve all employees starting from a specific manager (e.g., Alice).
+Include each employee’s employee_id, employee_name, their direct manager_id, and the level in the hierarchy (where Alice is level 1, her direct reports are level 2, and so on).
+Order the results by level and then by employee_id.
+
+
+Hints
+The NULL in the manager_id column indicates the employee at the top of the hierarchy.
+Use a CTE (Common Table Expression) for recursion.
+Use an additional column in your CTE to track the hierarchy level.
+
+Expected Result
+If you start from Alice, the query should return something like this:
+
+employee_id	employee_name	manager_id	level
+1	Alice	NULL	1
+2	Bob	    1	2
+3	Carol	1	2
+4	Dave	2	3
+5	Eve	    2	3
+6	Frank	3	3
+
+
+Challenge
+After completing the task, modify your query to calculate the total number of employees
+under each manager recursively.

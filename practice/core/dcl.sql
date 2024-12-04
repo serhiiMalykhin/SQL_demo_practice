@@ -1,0 +1,2 @@
+--GRANT SELECT, INSERT ON products TO some_user;
+--REVOKE INSERT ON products FROM some_user;

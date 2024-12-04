@@ -1,0 +1,6 @@
+Practice Tasks
+- Create a new table for orders and define a FOREIGN KEY referencing products.
+- Insert and test various constraints (CHECK, DEFAULT, etc.).
+- Use GROUP BY to find total stock and average price per category.
+- Simulate real-world transaction scenarios with BEGIN, COMMIT, and ROLLBACK.
+- Practice GRANT and REVOKE to manage permissions for a new user.
